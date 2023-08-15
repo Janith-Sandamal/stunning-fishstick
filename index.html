@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Random Email Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Random Email Generator</h1>
+    <div class="input-container">
+      <label for="pattern">Pattern:</label>
+      <input type="text" id="pattern" placeholder="example@domain.com">
+      <label for="range">Number of Emails:</label>
+      <input type="number" id="range" min="1" value="5">
+      <button id="generate">Generate Emails</button>
+    </div>
+    <div class="result" id="result">
+        <h2>Generated Emails:</h2>
+        <div id="email-list-container">
+          <ul id="email-list"></ul>
+        </div>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
